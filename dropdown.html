@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main{
+    background-color: white;
+    margin-top: 0px;
+    height:50px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+  }
+  .main ul li{
+    display: inline-block;
+    width: 100px;
+    font-size: larger;
+    cursor: pointer;
+    
+    padding: 10px;
+    
+  }
+  .main ul li:hover{
+    color: green;
+    background-color:whitesmoke;
+  }
+  .main ul li .sub{
+    display: none;
+  }
+  .main ul li:hover .sub{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-left:-15px;
+    border-top: 2px solid green;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-top: 10px;
+  }
+  .main ul li:hover .sub ul li{
+   display:block;
+   width: 200px;
+   text-align: left;
+   color: black;
+   font-size: medium;
+  }
+  body{
+    background-color: azure;
+  }
+  img{
+    display: inline-block;
+    position: relative;
+    left:650px;
+    bottom:34px;
+
+  }
+   
+
+</style>
+<body>
+  <div class="main">
+    <ul>
+      <li>courses
+        <div class="sub">
+          <ul>
+            <li>full stack development</li>
+            <li>for students</li>
+            <li>Datascience</li>
+            <li>MachineLearning</li>
+          </ul>
+        </div>
+      </li>
+      <li>tutorials
+        <div class="sub">
+          <ul>
+            <li>full stack development</li>
+            <li>for students</li>
+            <li>Datascience</li>
+            <li>MachineLearning</li>
+          </ul>
+        </div>
+      </li>
+      <li>practice
+        <div class="sub">
+          <ul>
+            <li>full stack development</li>
+            <li>for students</li>
+            <li>Datascience</li>
+            <li>MachineLearning</li>
+          </ul>
+        </div>
+      </li>
+      <li>jobs
+        <div class="sub">
+          <ul>
+            <li>full stack development</li>
+            <li>for students</li>
+            <li>Datascience</li>
+            <li>MachineLearning</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="" >
+  </div>
+  
+</body>
+</html>
